@@ -26,10 +26,10 @@ const Slide = () => {
   return (
     <div className="bg-black text-white py-12 ">
       {/* Heading */}
-      <h2 className="text-5xl font-bold mb-6">Get the highlights.</h2>
+      <h2 className="text-center text-xl font-bold mb-6">Get the highlights.</h2>
 
       {/* Slider Container */}
-      <div className="max-w-full mx-auto relative overflow-hidden p-4 bg-grey-900 rounded-lg">
+      <div className="max-w-full mx-auto relative overflow-hidden p-4 bg-gray-800 rounded-lg">
         <div
           className="flex gap-4 transition-transform duration-500"
           style={{
