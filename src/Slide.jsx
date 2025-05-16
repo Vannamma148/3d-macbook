@@ -29,7 +29,7 @@ const Slide = () => {
       <h2 className="text-5xl font-bold mb-6">Get the highlights.</h2>
 
       {/* Slider Container */}
-      <div className="max-w-full mx-auto relative overflow-hidden p-4 bg-black/80 rounded-lg">
+      <div className="max-w-full mx-auto relative overflow-hidden p-4 bg-grey-900 rounded-lg">
         <div
           className="flex gap-4 transition-transform duration-500"
           style={{
