@@ -24,12 +24,12 @@ const Slide = () => {
   }, [totalSlides, visibleCount]);
 
   return (
-    <div className="bg-gray-900 text-white py-12 ">
+    <div className="bg-black text-white py-12 ">
       {/* Heading */}
       <h2 className="text-3xl font-bold mb-6">Get the highlights.</h2>
 
       {/* Slider Container */}
-      <div className="max-w-full mx-auto relative overflow-hidden p-4 bg-gray-800 rounded-lg">
+      <div className="max-w-full mx-auto relative overflow-hidden p-4 bg-black/80 rounded-lg">
         <div
           className="flex gap-4 transition-transform duration-500"
           style={{
