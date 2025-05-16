@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from "react";
 
 const images = [
-     "/hero_apple_intelligence_headline__d3q0g47xl682_medium.png",
-    "/center_stage_endframe__ezvmmpbbfouq_medium.jpg",
-  "/highlights_apple_intelligence_siri__d970vf0sy32a_large.jpg",
-  "/highlights_battery__ua2dmuk7jvmm_large.jpg",
-  "/highlights_display__ed8l4csvmfee_large.jpg",
- 
+  "https://www.apple.com/in/macbook-pro/images/overview/highlights/highlights_apple_intelligence_siri__d970vf0sy32a_large.jpg",
+  "https://www.apple.com/v/macbook-pro/ar/images/overview/highlights/highlights_battery__ua2dmuk7jvmm_large.jpg",
+  "https://www.apple.com/v/macbook-pro/ar/images/overview/themes/apple-intelligence/apple_intelligence_writing_endframe__dn08l84ph4gi_medium.jpg",
+  "https://www.apple.com/v/macbook-pro/ar/images/overview/highlights/highlights_display__ed8l4csvmfee_medium.jpg",
+  "https://www.apple.com/in/macbook-pro/images/overview/highlights/highlights_apple_intelligence_siri__d970vf0sy32a_medium.jpg",
 ];
 
 const Slide = () => {
@@ -25,12 +24,12 @@ const Slide = () => {
   }, [totalSlides, visibleCount]);
 
   return (
-    <div className="max-w-full mx-auto p-4">
+    <div className="bg-gray-900 text-white py-12 ">
       {/* Heading */}
-      <h2 className="text-4xl font-bold mb-6">Get the highlights.</h2>
+      <h2 className="text-3xl font-bold mb-6">Get the highlights.</h2>
 
-      {/* Slider */}
-      <div className="relative overflow-hidden">
+      {/* Slider Container */}
+      <div className="max-w-full mx-auto relative overflow-hidden p-4 bg-gray-800 rounded-lg">
         <div
           className="flex gap-4 transition-transform duration-500"
           style={{
@@ -46,8 +45,8 @@ const Slide = () => {
               className="rounded-lg object-cover flex-shrink-0"
               style={{
                 flexBasis: `calc(${100 / totalSlides}% - 12px)`,
-                height: "400px",
-                margin: "10px 0",
+                height: "500px",
+                margin: "10px",
               }}
             />
           ))}
@@ -62,7 +61,7 @@ const Slide = () => {
                 key={idx}
                 onClick={() => setCurrentIndex(idx)}
                 className={`w-3 h-3 rounded-full cursor-pointer transition-all duration-300 ${
-                  idx === currentIndex ? "bg-black" : "bg-gray-400"
+                  idx === currentIndex ? "bg-white" : "bg-gray-500"
                 }`}
               />
             ))}
